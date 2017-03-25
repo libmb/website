@@ -67,6 +67,10 @@ header {
   height: 50%;
 }
 
+.hamburger {
+  color: white;
+}
+
 /*======== NAV =========*/
 nav{
   width:auto;
