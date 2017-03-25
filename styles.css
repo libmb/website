@@ -1,0 +1,219 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+  font-family: 'Yantramanav', sans-serif;
+  color: black;
+}
+
+body {
+    background-image:url("images/mobileone.png");
+    background-repeat: no-repeat;
+}
+
+footer {
+  background-image: url("images/mobilefooter.png");
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+/*Default mobile design*/
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.Site-content {
+  flex: 1;
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+/*=========== HEADER ============*/
+
+header {
+  margin-bottom: 25px;
+}
+
+.headerover {
+    width: 100%;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    z-index: -1;
+}
+
+.flexyContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 50%;
+  height: 50%;
+}
+
+/*======== NAV =========*/
+nav{
+  width:auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-idex: 2;
+}
+
+.nav {
+    display: none;
+    background-color: black;
+    font-weight: 400;
+    position: relative;
+    z-idex: 5;
+}
+
+.nav-item {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+a:hover {
+  color: blue;
+}
+
+/*=========== FOOTER ============*/
+footer {
+  position: relative;
+  margin-top: -180px; /* negative value of footer height */
+  height: 180px;
+  clear: both;
+}
+
+/*=========== Media Queries =======*/
+/* Mobile Styles */
+@media only screen and (max-width: 424px) {
+  /*In addition to above styles*/
+}
+
+/* Tablet */
+@media only screen and ( min-width: 425px) {
+  body {
+      background-image:url("images/deskheader2.png");
+      background-repeat: no-repeat;
+      background-color: pink;
+    }
+    .headerover {
+        width: 100%;
+        position: absolute;
+        left: 80px;
+        top: 30px;
+        z-index: -1;
+    }
+    .logo {
+      margin-left: 10px;
+      width: 200px;
+      height: ;
+    }
+    footer {
+      background-image: url("images/deskfooter.png");
+    }
+    .Site-content {
+      font-size: 2.4em;
+      line-height: 1.8;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+  body {
+      background-size: contain;
+      background-color: gray;
+  }
+  .headerover {
+      left: 100px;
+      top: 20px;
+  }
+  footer {
+    background-size: contain;
+  }
+  .Site-content {
+    font-size: 2.6em;
+    line-height: 1.95;
+  }
+}
+
+/*Large Monitor*/
+@media only screen and (min-width: 1301px) {
+  body {
+      background-color: plum;
+  }
+  .logo {
+    width: 300px;
+  }
+  .Site {
+    margin-top: 250px;
+  }
+.Site-content {
+  font-size: 2.8em;
+  line-height: 2.1;
+}
+}
+
+/*TV*/
+@media only screen and (min-width: 1801px) {
+  body {
+      background-color: lightblue;
+  }
+  .headerover {
+      left: 10em;
+      top: 5em;
+  }
+  .logo {
+    margin-left: 2em;
+    width: 20em;
+  }
+  .Site-content {
+    font-size: 3.2em;
+    line-height: 2.4;
+  }
+}
+
+/*large size TV*/
+@media only screen and (min-width: 2400px) {
+  body {
+      background-color: darksalmon;
+  }
+  .headerover {
+      left: 10em;
+      top: 5em;
+  }
+  .logo {
+    margin-left: 2em;
+    width: 20em;
+  }
+  .Site {
+    margin-top: 400px;
+  }
+  .Site-content {
+    font-size: 4em;
+    line-height: 3;
+  }
+}
